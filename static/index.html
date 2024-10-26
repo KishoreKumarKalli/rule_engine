@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rule Engine</h1>
+
+        <div class="section">
+            <h2>Create Rule</h2>
+            <p>Example: age > 30 AND department = 'Sales'</p>
+            <textarea id="ruleInput" rows="4" placeholder="Enter rule string..."></textarea>
+            <button onclick="createRule()">Create Rule</button>
+            <pre id="ruleOutput"></pre>
+        </div>
+
+        <div class="section">
+            <h2>Evaluate Rule</h2>
+            <p>Example: {"age": 35, "department": "Sales"}</p>
+            <textarea id="dataInput" rows="4" placeholder="Enter JSON data..."></textarea>
+            <button onclick="evaluateRule()">Evaluate</button>
+            <div id="evaluationResult"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
